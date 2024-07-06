@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Diary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Personal Diary</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+   <style>
+    .post p{
+        font-size: 30px;
+    }
+   h3{
+    font-size:35px;
+   }
+   label{
+    font-size:20px;
+   }
+</style>
+    <main>
+    <article id="post1" class="post" data-tags="javascript, learning">
+        <h2>Navigating the Emotional Turmoil of Insecurity and Self-Comparison</h2>
+        <p>Published on: <time datetime="2024-07-01">July 1, 2024</time></p>
+        <img src="aesthet.jpg" alt="Navigating the Emotional Turmoil of Insecurity and Self-Comparison">
+        <p>Today has been an emotional rollercoaster. I'm feeling a complex mix of insecurity and self-doubt, and it's weighing heavily on me. Every time I look around, it seems like everyone else has their lives perfectly together. Their successes are on full display, and I can't help but compare myself to them. It's like I'm caught in a never-ending cycle of measuring myself against others, and I always come up short.
+            <br>
+            This constant comparison is exhausting. I see their accomplishments, their happiness, and their confidence, and I wonder why I can't feel the same. What am I doing wrong? Why does it seem so effortless for them? These thoughts spiral through my mind, making me question my worth and capabilities. It's a deep-seated insecurity that eats away at me, making it hard to focus on anything else.
+            <br>
+            Social media amplifies these feelings. It's like a curated highlight reel of everyone's best moments, and it feels impossible not to compare my behind-the-scenes with their polished exteriors. I scroll through endless photos of smiling faces, achievements, and milestones, and I can't help but feel like I'm missing out or falling behind.
+            <br>
+            Yet, somewhere in the depths of this emotional fog, I know that this isn't the full picture. I have my own strengths, my own successes, and my own journey. It's just hard to see that clearly right now. I remind myself that everyone has their struggles, even if they don't show them. The people I compare myself to might also be dealing with their own insecurities and doubts.
+            <br>
+            In these moments of intense self-doubt, I try to be kinder to myself. I remind myself that I am a work in progress, and that's okay. It's okay to have bad days, to feel insecure, and to struggle. What matters is that I keep moving forward, one step at a time. I focus on my own path, my own growth, and my own achievements, no matter how small they may seem. I breathe deeply and take it day by day, knowing that I am enough, just as I am.<br></p>
+      
+        <section class="comments">
+            <h3>Comments</h3>
+            <div class="login-box">
+                <form id="commentForm1">
+                    <div class="user-box">
+                        <input required="" name="name" type="text">
+                        <label>Your Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input required="" name="message" type="text">
+                        <label>Your Comment</label>
+                    </div>
+                    <a href="#" onclick="submitComment(event, 'commentForm1', 'commentList1')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Submit
+                    </a>
+                </form>
+            </div>
+            <div class="commentList" id="commentList1"></div>
+            <p>Did I remind you Anything, Leave your comments!</p>
+        </section>
+    </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

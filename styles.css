@@ -1,0 +1,386 @@
+/* Existing styles... */
+
+body {
+  font-family: 'Dancing Script', 'cross origin';
+  margin: 0;
+  padding: 0;
+  background-color: #6E6362;
+  color: #011627;
+  font-weight: 900px;
+}
+
+header {
+  background-color: #8A716A;
+  color: #130303;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #130303;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px; /* Increase this value to make the font larger */
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+article {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #8A716A;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+article img {
+  max-width: 300px;
+  height: auto;
+  float:left;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10%;
+}
+
+.comments {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.commentList {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.commentList div {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #535C91;
+  background-color: #8A716A;
+  border-radius: 5px;
+}
+
+.login-box {
+  position: relative;
+  width: 500px;
+  padding: 20px;
+  background: #8A716A;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  background-color: #4E4A59;
+  border-radius: 5px;
+}
+
+.login-box a:hover {
+  background: #070F2B;
+  color: #FFDB5C;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #070F2B, 0 0 25px #070F2B, 0 0 50px #070F2B, 0 0 100px #070F2B;
+}
+
+#personal,
+#technology,
+#aesthet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #C191A1;
+  padding: 30px;
+  margin: 50px;
+  width: 90%;
+  height: 400px;
+  text-align: center;
+  background-color: #6E6362;
+  position: relative;
+}
+
+#personal img,
+#technology img,
+#aesthet img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#personal h2,
+#personal a,
+#technology h2,
+#technology a,
+#aesthet h2,
+#aesthet a {
+  position: relative;
+  z-index: 1;
+}
+#personal button,
+#technology button,
+#aesthet button {
+  background-color: #593959;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens */
+@media (min-width: 1200px) {
+  main {
+    flex-direction: row;
+  }
+
+  #personal,
+  #technology,
+  #aesthet {
+    width: 30%;
+    height: auto;
+  }
+    #personal,
+#technology,
+#aesthet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #C191A1;
+  padding: 30px;
+  margin: 50px;
+  width: 90%;
+  height: 400px;
+  text-align: center;
+  background-color: #6E6362;
+  position: relative;
+}
+
+#personal img,
+#technology img,
+#aesthet img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#personal h2,
+#personal a,
+#technology h2,
+#technology a,
+#aesthet h2,
+#aesthet a {
+  position: relative;
+  z-index: 1;
+}
+  }
+
+/* Medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #personal,
+  #technology,
+  #aesthet {
+    width: 45%;
+    height: auto;
+  }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5em 0;
+  }
+
+  #personal,
+  #technology,
+  #aesthet {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .login-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .login-box form a {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+/* Styles for the About Me page */
+.about-me {
+  padding: 20px;
+  background-color: #F0E4D7;
+  color: #462521;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #462521;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #8A716A;
+}
+
+/* Media Queries for About Me Page */
+@media (max-width: 767px) {
+  .about-me {
+      padding: 10px;
+  }
+
+  .about-me h2 {
+      font-size: 28px;
+  }
+
+  .about-me p {
+      font-size: 16px;
+  }
+}
+/* Highlight effect */
+.highlight {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+/* Transition for smooth transformation */
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
